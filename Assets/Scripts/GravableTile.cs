@@ -198,7 +198,7 @@ public class GravableTile : MonoBehaviour {
 								Global.Dataholder.GravTileA.MakeParent ();
 							}
 
-
+							Global.Dataholder.TutorialModeNoMoving = false;
 
 
 							Global.Dataholder.FreezeGravTiles ();
