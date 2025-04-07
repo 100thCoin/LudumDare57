@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\MoondustTiles.cs" />
      <Compile Include="Assets\Scripts\Mustache.cs" />
      <Compile Include="Assets\Scripts\MustacheCutscene.cs" />
+     <Compile Include="Assets\Scripts\MysteryCaveArrow.cs" />
      <Compile Include="Assets\Scripts\NecroMooncer.cs" />
      <Compile Include="Assets\Scripts\NecromooncerReturnGemCutscene.cs" />
      <Compile Include="Assets\Scripts\Override\MeshRendererEditor.cs" />
