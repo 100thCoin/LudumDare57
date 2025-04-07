@@ -88,6 +88,7 @@ public class PlayerMovement : MonoBehaviour {
 
 
 	public GameObject Tut2Voice;
+	public bool PreventMovementForCutscenePurposes2;
 
 	public float FireDelay;
 
@@ -98,7 +99,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Update()
 	{
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetKeyDown (KeyCode.Space) && !PreventMovementForCutscenePurposes2) {
 			GetSpacebarDown = true;
 		}
 
@@ -183,7 +184,7 @@ public class PlayerMovement : MonoBehaviour {
 		touchingLeft = false;
 		touchingRight = false;
 		touchingMoon2 = false;
-		if (!PreventMovementForCutscenePurposes && !PreventMovementForCutscenePurposes_AndShooting && !Global.Dataholder.TutorialModeNoMoving) {
+		if (!PreventMovementForCutscenePurposes && !PreventMovementForCutscenePurposes_AndShooting && !Global.Dataholder.TutorialModeNoMoving && !PreventMovementForCutscenePurposes2) {
 			
 			if (Input.GetKey (KeyCode.Space)) {
 				BufferJumpTimer += Time.deltaTime;
@@ -314,7 +315,7 @@ public class PlayerMovement : MonoBehaviour {
 		// get player direction
 		ChangeDirTimer += Time.deltaTime*6;
 		int dir = 0;
-		if (!PreventMovementForCutscenePurposes && !PreventMovementForCutscenePurposes_AndShooting && !Global.Dataholder.TutorialModeNoMoving) {
+		if (!PreventMovementForCutscenePurposes && !PreventMovementForCutscenePurposes_AndShooting && !Global.Dataholder.TutorialModeNoMoving && !PreventMovementForCutscenePurposes2) {
 			
 			if (Input.GetKey (KeyCode.A)) {
 				dir--;
@@ -394,7 +395,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
 		int yDir = 0;
-		if (!PreventMovementForCutscenePurposes && !PreventMovementForCutscenePurposes_AndShooting) {
+		if (!PreventMovementForCutscenePurposes && !PreventMovementForCutscenePurposes_AndShooting && !PreventMovementForCutscenePurposes2) {
 			
 			if (Input.GetKey (KeyCode.W)) {
 				yDir++;
@@ -626,7 +627,7 @@ public class PlayerMovement : MonoBehaviour {
 			// we can enter the ground by pressing shift, or maybe another button I don't know yet
 			Moon2CollisionCheckTimer = 0;
 			//TEST 
-			if (!PreventMovementForCutscenePurposes && !PreventMovementForCutscenePurposes_AndShooting) {
+			if (!PreventMovementForCutscenePurposes && !PreventMovementForCutscenePurposes_AndShooting && !PreventMovementForCutscenePurposes2) {
 				
 				if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.E)) {
 					InsideMoon2 = true;

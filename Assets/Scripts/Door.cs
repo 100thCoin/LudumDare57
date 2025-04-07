@@ -52,7 +52,7 @@ public class Door : MonoBehaviour {
 					} else if (GemRequirement == 4) {
 						Global.Dataholder.VoiceQueue.Add (Voice1);
 						Global.Dataholder.VoiceQueue.Add (Voice2);
-						
+						Global.Dataholder.PMov.PreventMovementForCutscenePurposes = true;;
 
 					}
 				}
@@ -117,6 +117,8 @@ public class Door : MonoBehaviour {
 							Global.Dataholder.TheHudButton.Inactive = true;
 							Global.Dataholder.CamMov.enabled = false;
 							Global.Dataholder.PMov.PreventMovementForCutscenePurposes = true;
+							Global.Dataholder.PMov.PreventMovementForCutscenePurposes2 = true;
+
 						}
 					} else {
 						ScreenTransition = true;

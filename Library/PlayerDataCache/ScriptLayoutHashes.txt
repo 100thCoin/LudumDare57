@@ -4,8 +4,9 @@ C:/Users/100th_Coin/Documents/LudumDare57/MoonReconstructionProgram.exe
 SceneListBegin?
 Assets/Scene.unity
 SceneListEnd?
-c826edb680b1f2bf854463a8af22dd0d Assembly-CSharp.dll:.PlayerMovement
+2f395be75cc5390b5735ef6e48fdfd73 Assembly-CSharp.dll:.PlayerMovement
 2ac799ccd5b519aa4e1a205e320f59e8 Assembly-CSharp.dll:.TitleManager
+9dd35f7493624d6e6e842057de74ff96 Assembly-CSharp.dll:.MysteryCaveArrow
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -187,4 +188,3 @@ ee889a8dd2c0b07359721d38c0573b52 Assembly-CSharp.dll:.SuperMain
 9f3051bd1560a11ddb65196b08982d25 Assembly-CSharp.dll:.BreakTheseTilesTooltip
 c9cf1eae3f9be6f5aedb637311a33b9e Assembly-CSharp.dll:.ShopText
 1d273e0437695ec05aa8ffb277433670 Assembly-CSharp.dll:.HUD_PercentTracker
-9dd35f7493624d6e6e842057de74ff96 Assembly-CSharp.dll:.MysteryCaveArrow
