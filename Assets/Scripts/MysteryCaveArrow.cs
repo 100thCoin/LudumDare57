@@ -24,8 +24,10 @@ public class MysteryCaveArrow : MonoBehaviour {
 			if (timer > 1) {
 				timer -= 1;
 			}
-		}
+		} else {
+			SR.enabled = false;
 
+		}
 		
 	}
 }
